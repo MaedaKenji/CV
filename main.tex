@@ -1,4 +1,4 @@
-    %-------------------------
+%-------------------------
 % Resume in Latex
 % Author
 % License : MIT
@@ -56,14 +56,17 @@
 
 \urlstyle{same}
 
-\raggedright
+\raggedright{}
 \setlength{\tabcolsep}{0in}
+% Fancyhdr settings
+\setlength{\footskip}{4.5pt}
+
 
 
 % Sections formatting
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+}{}{0em}{}[\color{black}\titlerule{} \vspace{-7pt}]
 
 %-------------------------
 % Custom commands
@@ -143,17 +146,18 @@
   \end{tabularx}
 }
 
-%-----------EDUCATION-----------
+%-----------EDUCATION\-----------
 \section{\textbf{Education}}
 \resumeSubHeadingListStart
 \resumeSubheading
 {Bachelor of Computer Engineering}{GPA: 3.64}
-{Institut Teknologi Sepuluh Nopember, Surabaya}{2022-Present}
+{Institut Teknologi Sepuluh Nopember, Surabaya}{2022\-Present}
 \resumeSubHeadingListEnd
 \vspace{-5.5mm}
 %
 
-%-----------PROJECTS-----------------
+%-----------PROJECTS\-----------------
+
 \section{\textbf{Personal Projects}}
 \resumeSubHeadingListStart
 
@@ -177,7 +181,7 @@
 {}
 \resumeItemListStart
 \item {Developed a smart wheelchair system that allows users to control movement using eye gaze, enhancing accessibility for individuals with mobility impairments.}
-\item {Integrated real-time eye tracking and gesture recognition using Python and OpenCV, enabling intuitive navigation and control.}
+\item {Integrated real\-time eye tracking and gesture recognition using Python and OpenCV, enabling intuitive navigation and control.}
 \item {Implemented embedded hardware components (Arduino/ESP32) for motor control and sensor feedback, ensuring reliable operation.}
 \item {Collaborated with a team to design, prototype, and test the system, resulting in a functional prototype showcased at the GEMASTIK XVII competition.}
 \item {Technology Used: Python, OpenCV, Arduino/ESP32, C/C++, computer vision algorithms.}
@@ -185,13 +189,13 @@
 \vspace{-2mm}
 
 \resumeProject
-{Sappy: Multi-Role Livestock Management App (Flutter)} % Project Name
+{Sappy: Multi\-Role Livestock Management App (Flutter)} % Project Name
 {A livestock management app for multiple roles (Farmer, Admin, Doctor) with NFC support.}
 {} % Event Dates
 {}
 \resumeItemListStart
-\item {Provides role-based access and dashboards for farmers, administrators, and doctors, all in a unified mobile app.}
-\item {Supports English and Indonesian languages using built-in localization.}
+\item {Provides role\-based access and dashboards for farmers, administrators, and doctors, all in a unified mobile app.}
+\item {Supports English and Indonesian languages using built\-in localization.}
 \item {Implements state management via Provider and enables NFC functionality for secure identification and tracking.}
 \item {Includes data visualization, authentication, and environmental configuration using modern Flutter ecosystem packages.}
 \item {Technology Used: Flutter, Dart, Provider, NFC, fl\_chart, carousel\_slider, custom fonts/assets.}
@@ -200,12 +204,12 @@
 
 \resumeProject
 {Dot Matrix Ping Pong Game (Embedded System)} %Project Name
-{A microcontroller-based two-player Ping Pong game using an 8x32 LED dot matrix and custom C++ firmware.} %Project Description
+{A microcontroller\-based two\-player Ping Pong game using an 8x32 LED dot matrix and custom C++ firmware.} %Project Description
 {} %Event Dates
 {}
 \resumeItemListStart
 \item {Implements responsive paddle and ball mechanics, scorekeeping, and game flow on a chain of 8x8 LED matrix modules using the MD\_Parola and MD\_MAX72xx libraries.}
-\item {Features analog paddle control (potentiometers), digital smash/serve buttons, and real-time animated score display.}
+\item {Features analog paddle control (potentiometers), digital smash/serve buttons, and real\-time animated score display.}
 \item {Includes custom animations, win/lose logic, and a smash mechanic for increased gameplay excitement.}
 \item {Technology Used: C++ (Arduino/ESP32), MD\_Parola, MD\_MAX72xx, SPI, basic circuit design.}
 \resumeItemListEnd
@@ -213,24 +217,24 @@
 
 \resumeProject
 {OpenCV Poker Game} %Project Name
-{A Poker game with real-time card recognition using OpenCV and Python in a Jupyter Notebook.} %Project Description
+{A Poker game with real\-time card recognition using OpenCV and Python in a Jupyter Notebook.} %Project Description
 {} %Event Dates
 {}
 \resumeItemListStart
-\item {Implements real-time playing card detection and recognition using OpenCV image processing techniques, allowing the system to identify card values and suits from camera or image input.}
+\item {Implements real\-time playing card detection and recognition using OpenCV image processing techniques, allowing the system to identify card values and suits from camera or image input.}
 \item {Integrates complete Poker game logic, including dealing, betting rounds, hand evaluation, and winner determination, all visualized and controlled through Jupyter Notebook cells.}
-\item {Facilitates interactive and step-by-step gameplay with visual feedback, supporting easy modification and educational exploration of both computer vision and game mechanics.}
+\item {Facilitates interactive and step\-by\-step gameplay with visual feedback, supporting easy modification and educational exploration of both computer vision and game mechanics.}
 \item {Technology Used: Python, Jupyter Notebook, OpenCV, NumPy, image segmentation, template matching, Poker hand evaluation algorithms.}
 \resumeItemListEnd
 
 \clearpage
 \resumeProject
 {Alien Space (2D Game with C/C++ Graphics)} %Project Name
-{A classic-inspired 2D top-down space shooter game developed using C and C++ graphics programming.} %Project Description
+{A classic\-inspired 2D top\-down space shooter game developed using C and C++ graphics programming.} %Project Description
 {} %Event Dates
 {}
 \resumeItemListStart
-\item {Implements a real-time arcade-style game loop featuring player spaceship movement, alien enemies, bullet firing mechanics, and collision detection.}
+\item {Implements a real\-time arcade\-style game loop featuring player spaceship movement, alien enemies, bullet firing mechanics, and collision detection.}
 \item {Renders game graphics using C/C++ graphics libraries, providing visual representation of player, aliens, bullets, and score.}
 \item {Handles keyboard input for responsive control and integrates scoring and win/lose conditions.}
 \item {Technology Used: C, C++, graphics.h (or SDL/SFML as applicable), structured programming, basic event handling.}
@@ -240,7 +244,7 @@
 
 \resumeProject
 {Comic Reading Web Application} % Project Name
-{A web-based comic reading platform supporting manga, manhua, and manhwa with optimized reading experience.} % Project Description
+{A web\-based comic reading platform supporting manga, manhua, and manhwa with optimized reading experience.} % Project Description
 {} % Event Dates
 {}
 \resumeItemListStart
@@ -254,12 +258,13 @@
 \resumeSubHeadingListEnd
 \vspace{-4mm}
 
-% %-----------EXPERIENCE-----------------
+% %-----------EXPERIENCE\-----------------
+
 \section{\textbf{Experience}}
 
 \resumeSubHeadingListStart
 \resumeSubheading
-{Research Intern \- Full Stack Developer}{Badan Riset dan Inovasi Nasional (BRIN) \- Pusat Riset Sains Data dan Informasi}
+{Research Intern - Full Stack Developer}{Badan Riset dan Inovasi Nasional (BRIN) - Pusat Riset Sains Data dan Informasi}
 {Bandung}{Feb \- July 2026}
 \resumeItemListStart
 \item {Developed a cross\-platform application (Mobile, Tablet, Desktop) using Flutter to precisely calculate NPK (Nitrogen, Phosphorus, Potassium) nutrient requirements for various vegetable crops.}
@@ -273,11 +278,11 @@
 
 \resumeSubheading
 {Research Assistant – Multimedia and IoT Lab (B300)}{Multimedia and IoT Laboratory (MIOT)}
-{Surabaya}{April - June 2025}
+{Surabaya}{April \- June 2025}
 \resumeItemListStart
 \item {Conducted research on deploying deep learning models on edge devices using NVIDIA Jetson Nano, focusing on computer vision tasks.}
-\item {Developed and optimized object detection pipelines using Python and C++ with MobileNet-SSD, YOLOv5n, and YOLOv11s architectures.}
-\item {Explored model conversion and acceleration techniques with ONNX and NVIDIA TensorRT for real-time inference.}
+\item {Developed and optimized object detection pipelines using Python and C++ with MobileNet\-SSD, YOLOv5n, and YOLOv11s architectures.}
+\item {Explored model conversion and acceleration techniques with ONNX and NVIDIA TensorRT for real\-time inference.}
 \item {Integrated and evaluated models within the NVIDIA DeepStream SDK for efficient video analytics and deployment.}
 \item {Benchmarked performance and resource utilization to optimize inference speed and accuracy in constrained environments.}
 \resumeItemListEnd
@@ -286,21 +291,21 @@
 \vspace{-2mm}
 \resumeSubheading
 {Research Assistant – Smart Wheelchair Development}{Multimedia and IoT Laboratory (MIOT)}
-{Surabaya}{Aug 2024 - Present}
+{Surabaya}{Aug 2024 \- Present}
 \resumeItemListStart
-\item {Maintained and enhanced a smart wheelchair system utilizing deep learning-based computer vision for hands-free navigation and control.}
-\item {Integrated real-time eye-gaze and facial gesture recognition using Python and OpenCV, improving system responsiveness and user accessibility.}
-\item {Collaborated with faculty and student teams to refine model architectures, optimize inference speed, and troubleshoot hardware-software integration issues.}
+\item {Maintained and enhanced a smart wheelchair system utilizing deep learning\-based computer vision for hands\-free navigation and control.}
+\item {Integrated real\-time eye\-gaze and facial gesture recognition using Python and OpenCV, improving system responsiveness and user accessibility.}
+\item {Collaborated with faculty and student teams to refine model architectures, optimize inference speed, and troubleshoot hardware\-software integration issues.}
 \item {Developed custom microcontroller firmware (C/C++) for reliable motor actuation and sensor feedback, ensuring safe and accurate wheelchair movement.}
 \item {Documented system upgrades, conducted user testing, and presented results in lab meetings and academic showcases.}
 \resumeItemListEnd
 
 \resumeSubheading
 {Lab Teaching Assistant – Basic Programming}{Multimedia and IoT Laboratory (MIOT)}
-{Surabaya}{Aug 2025 - Nov 2025}
+{Surabaya}{Aug 2025 \- Nov 2025}
 \resumeItemListStart
 \item {Developed and maintained lab materials, including coding exercises and troubleshooting guides during practicum, while also being responsible for deploying and maintaining the DMOJ online judge website used in coursework.}
-\item {Guided students through practical assignments in C/C++, providing real-time support and technical explanations.}
+\item {Guided students through practical assignments in C/C++, providing real\-time support and technical explanations.}
 \item {Evaluated student submissions, provided constructive feedback, and contributed to grading rubrics to ensure fair and consistent assessment.}
 \item {Organized and led review sessions before exams, addressing common misconceptions and reinforcing key programming concepts.}
 \resumeItemListEnd
@@ -308,11 +313,11 @@
 
 \resumeSubheading
 {Lab Teaching Assistant – Digital Systems}{Robotics and Digital Systems Laboratory (B401)}
-{Surabaya}{Mar 2025 - May 2025}
+{Surabaya}{Mar 2025 \- May 2025}
 \resumeItemListStart
 \item {Conducted lab sessions for \textit{Rangkaian Digital}, supporting over 100 undergraduate students each semester.}
 \item {Developed and maintained lab materials, including hardware schematics and troubleshooting guides for digital logic experiments.}
-\item {Guided students through practical assignments in digital circuit design, providing real-time support and technical explanations.}
+\item {Guided students through practical assignments in digital circuit design, providing real\-time support and technical explanations.}
 \item {Collaborated with faculty to improve lab workflows, implement new teaching tools, and enhance the overall learning experience.}
 \item {Organized and led review sessions before exams, addressing common misconceptions and reinforcing key concepts in digital systems.}
 \resumeItemListEnd
@@ -321,34 +326,34 @@
 
 \resumeSubheading
 {Lab Teaching Assistant – Telemathics Workshop}{Robotics and Digital Systems Laboratory (B401)}
-{Surabaya}{Mar 2025 - May 2025}
+{Surabaya}{Mar 2025 \- May 2025}
 \resumeItemListStart
-\item {Prepared and developed practicum modules and instructional materials for \textit{Workshop Telematika}, ensuring structured, hands-on learning for undergraduate students.}
-\item {Supervised and guided students during laboratory sessions, particularly in hardware-oriented activities including manual soldering, 3D design for prototyping, hot air rework (blower) soldering,  reflow soldering, and 3D printing.}
-\item {Provided real-time technical assistance in C/C++ programming and microcontroller-based experiments, helping students troubleshoot both software and hardware issues.}
+\item {Prepared and developed practicum modules and instructional materials for \textit{Workshop Telematika}, ensuring structured, hands\-on learning for undergraduate students.}
+\item {Supervised and guided students during laboratory sessions, particularly in hardware\-oriented activities including manual soldering, 3D design for prototyping, hot air rework (blower) soldering,  reflow soldering, and 3D printing.}
+\item {Provided real\-time technical assistance in C/C++ programming and microcontroller\-based experiments, helping students troubleshoot both software and hardware issues.}
 \item {Assessed student practicum results, delivered constructive feedback, and contributed to grading criteria to ensure fair and consistent evaluation.}
 \item {Organized and led review sessions prior to assessments, reinforcing key concepts and practical skills.}
 \resumeItemListEnd
 
 \resumeSubheading
 {PIC IoT Division – TIM Kawal GEMASTIK}{Institut Teknologi Sepuluh Nopember (ITS)}
-{Surabaya}{Jan 2025 - Nov 2025}
+{Surabaya}{Jan 2025 \- Nov 2025}
 \resumeItemListStart
-\item {Served as the Person-in-Charge (PIC) for the Internet of Things (IoT) division, coordinating communication between faculty supervisors, professors, mentors, and participating student teams.}
+\item {Served as the Person\-in\-Charge (PIC) for the Internet of Things (IoT) division, coordinating communication between faculty supervisors, professors, mentors, and participating student teams.}
 \item {Assisted in the selection and evaluation of candidate teams through proposal reviews, technical assessments, and readiness evaluations for the GEMASTIK competition.}
 \item {Provided administrative support for finalist teams, including documentation management, submission compliance, and coordination with the national GEMASTIK committee.}
 \item {Acted as the primary coordinator for mentoring activities by scheduling, organizing, and facilitating mentoring sessions with professors and domain experts in the IoT field.}
-\item {Supported teams’ non-technical needs such as presentation design, report structuring, and competition readiness to ensure high-quality deliverables.}
+\item {Supported teams’ non\-technical needs such as presentation design, report structuring, and competition readiness to ensure high\-quality deliverables.}
 \resumeItemListEnd
 
 \resumeSubheading
 {Web Developer – MIOT Webpage}
 {Multimedia and IoT Laboratory (MIOT)}
-{Surabaya}{Aug 2024- Present}
+{Surabaya}{Aug 2024\- Present}
 \resumeItemListStart
 \item {Designed and developed the official MIOT laboratory webpage to showcase research, publications, and team members.}
 \item {Implemented a responsive and modern user interface using React.js and Tailwind CSS, ensuring accessibility across devices.}
-\item {Integrated dynamic content management for news, events, and member profiles using JSON-based data structures.}
+\item {Integrated dynamic content management for news, events, and member profiles using JSON\-based data structures.}
 \item {Collaborated with lab members to gather requirements, iterate on design, and deploy the site using GitHub Pages.}
 \item {Optimized site performance and SEO, and provided documentation for future maintenance and updates.}
 \resumeItemListEnd
@@ -357,24 +362,24 @@
 \resumeSubheading
 {Workshop Assistant – International Workshop on Deep Learning}
 {Institut Teknologi Sepuluh Nopember}{Surabaya}
-{24 - 29 Nov 2025}
+{24 \- 29 Nov 2025}
 
 \resumeItemListStart
-\item {Assisted in the execution of a 5-day international workshop focused on machine learning and deep learning applications for assistive technology.}
-\item {Provided hands-on support to participants by helping resolve technical issues and learning difficulties during workshop sessions.}
-\item {Supported professors and speakers in running the event, including administrative coordination and on-site logistical tasks.}
+\item {Assisted in the execution of a 5\-day international workshop focused on machine learning and deep learning applications for assistive technology.}
+\item {Provided hands\-on support to participants by helping resolve technical issues and learning difficulties during workshop sessions.}
+\item {Supported professors and speakers in running the event, including administrative coordination and on\-site logistical tasks.}
 \item {Contributed to creating an inclusive and supportive learning environment for students from Malaysia, Vietnam, the Philippines, Ethiopia, Pakistan, and Indonesia.}
 \resumeItemListEnd
 
 \resumeSubheading
 {Representative – Toyota Exhibition Smart Wheelchair Demo}
 {Toyota Motor Manufacturing Indonesia}
-{Jakarta}{26 - 27 May 2025}
+{Jakarta}{26 \- 27 May 2025}
 \resumeItemListStart
 \item {Represented the smart wheelchair project at the Toyota Exhibition, showcasing the university’s innovation in assistive technology.}
 \item {Assisted with technical preparation, including system integration, hardware checks, and software updates to ensure reliable operation during the event.}
-\item {Supported on-site troubleshooting, addressing real-time technical issues and adapting to exhibition constraints to maintain smooth demonstrations.}
-\item {Engaged with visitors, industry professionals, and Toyota representatives, providing detailed explanations of the wheelchair’s computer vision-based control system and its societal impact.}
+\item {Supported on\-site troubleshooting, addressing real\-time technical issues and adapting to exhibition constraints to maintain smooth demonstrations.}
+\item {Engaged with visitors, industry professionals, and Toyota representatives, providing detailed explanations of the wheelchair’s computer vision\-based control system and its societal impact.}
 \item {Helped prepare supporting materials such as technical documentation, user guides, and demonstration scripts to facilitate effective communication and audience understanding.}
 \resumeItemListEnd
 
@@ -389,13 +394,13 @@
 {Semarang State University (UNNES)}{Semarang}
 % {Sambal Telur Team (ITS)}
 % {Semarang State University (UNNES)}
-{Jan - Nov 2024}
+{Jan \- Nov 2024}
 
 \resumeItemListStart
 \item {Led a team representing Institut Teknologi Sepuluh Nopember in the Smart Devices, Embedded Systems, and IoT Division at GEMASTIK XVII.}
 \item {Coordinated the team’s efforts across software and hardware components, managed timelines, and delegated responsibilities.}
 \item {Developed a smart wheelchair system controllable via eye movement, integrating computer vision and embedded hardware.}
-\item {Secured the National Finalist award (Juara Harapan) through efficient planning, ideation, and execution of an IoT-based innovation.}
+\item {Secured the National Finalist award (Juara Harapan) through efficient planning, ideation, and execution of an IoT\-based innovation.}
 \resumeItemListEnd
 \vspace{-4mm}
 
@@ -403,20 +408,20 @@
 \resumeSubheading
 {Head of Logistics Department – Multimedia and Game Event (MAGE X)}
 {Multimedia and Game Event (MAGE X)}
-{Surabaya}{Jan - November 2024}
+{Surabaya}{Jan \- November 2024}
 \resumeItemListStart
-\item {Led the logistics team for MAGE X, a major university-level multimedia and game competition event.}
+\item {Led the logistics team for MAGE X, a major university\-level multimedia and game competition event.}
 \item {Coordinated procurement, inventory management, and distribution of event materials and equipment.}
 \item {Developed and executed logistics plans to ensure timely setup and smooth operation across multiple event venues.}
-\item {Collaborated with other departments to address real-time needs and resolve logistical challenges during the event.}
-\item {Managed vendor relations, budget tracking, and post-event inventory reconciliation.}
+\item {Collaborated with other departments to address real\-time needs and resolve logistical challenges during the event.}
+\item {Managed vendor relations, budget tracking, and post\-event inventory reconciliation.}
 \resumeItemListEnd
 \vspace{-4mm}
 
 \resumeSubheading
-{Expert Staff - UKM Rebana ITS}
+{Expert Staff \- UKM Rebana ITS}
 {Student Activity Unit Rebana ITS}
-{Surabaya}{Aug - Sep 2024}
+{Surabaya}{Aug \- Sep 2024}
 % \vspace{-5mm}
 \resumeItemListStart
 \item {Served as a mentor guiding project leaders and team members in executing their respective work programs.}
@@ -426,9 +431,9 @@
 \vspace{-4mm}
 
 \resumeSubheading
-{Event Coordinator - Welcome Party}
+{Event Coordinator \- Welcome Party}
 {Studet Activity Unit Rebana ITS}
-{Surabaya}{Jul - Aug 2023}
+{Surabaya}{Jul \- Aug 2023}
 \resumeItemListStart
 \item {Led the organizing committee to successfully hold the Welcome Party for new members.}
 \item {Managed team operations, chaired meetings, and delegated responsibilities to ensure event objectives were met.}
@@ -437,7 +442,8 @@
 % End of Positions of Responsibility
 \resumeSubHeadingListEnd
 
-% %-----------SKILLS & INTERESTS-----------------
+% %-----------SKILLS & INTERESTS\-----------------
+
 \section{\textbf{Technical Skills and Interests}}
 \begin{itemize}[leftmargin=0.05in, label={}]
   \small{\item{
@@ -449,12 +455,10 @@
 
         \textbf{Relevent Coursework}{: Data Structures \& Algorithms, Operating Systems, Object Oriented Programming, Database Management System, Software Engineering. } \\
         \textbf{Areas of Interest}{: Sofware Development} \\
-        \textbf{Soft Skills}{: Problem Solving, Self-learning, Presentation, Adaptability} \\
+        \textbf{Soft Skills}{: Problem Solving, Self\-learning, Presentation, Adaptability} \\
         }}
 \end{itemize}
 \vspace{-16pt}
 
-%-----------Positions of Responsibility-----------------
-\
 
 \end{document}
