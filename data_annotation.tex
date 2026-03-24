@@ -1,0 +1,320 @@
+    %-------------------------
+% Resume in Latex
+% Author
+% License : MIT
+%------------------------
+
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+% Adjust margins
+%\addtolength{\oddsidemargin}{-0.5in}
+%\addtolength{\evensidemargin}{-0.5in}
+%\addtolength{\textwidth}{1in}
+\usepackage[most]{tcolorbox}
+\tcbset{
+	frame code={}
+	center title,
+	left=0pt,
+	right=0pt,
+	top=0pt,
+	bottom=0pt,
+	colback=gray!20,
+	colframe=white,
+	width=\dimexpr\textwidth\relax,
+	enlarge left by=-2mm,
+	boxsep=4pt,
+	arc=0pt,outer arc=0pt,
+}
+
+\urlstyle{same}
+
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+% \renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+%%%%%% DEFINE ELEMENTS HERE %%%%%%%
+\newcommand{\name}{Agus Fuad Mudhofar} % Your Name
+\newcommand{\course}{Computer Engineering} % Your Program
+% \newcommand{\roll}{xxxxxxx} % Your Roll No.
+\newcommand{\phone}{8882111890} % Your Phone Number
+\newcommand{\emaila}{agusfuad090@gmail.com} %Email 1
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+%----------HEADING-----------------
+
+{
+  \begin{tabularx}{\linewidth}{L r}                                                                                                                                                    \\
+    \textbf{\Large \name}                           & {\raisebox{0.0\height}{\footnotesize \faPhone}\ +62-\phone}                                                        \\
+    {Institut Teknologi Sepuluh Nopember, Surabaya} & \href{mailto:\emaila}{\raisebox{0.0\height}{\footnotesize \faEnvelope}\ {\emaila}}                                 \\
+                                                    & \href{https://github.com/MaedaKenji}{\raisebox{0.0\height}{\footnotesize \faGithub}\ {GitHub Profile}}             \\
+                                                    & \href{https://www.linkedin.com/in/agus4434/}{\raisebox{0.0\height}{\footnotesize \faLinkedin}\ {LinkedIn Profile}}
+  \end{tabularx}
+}
+
+%-----------EDUCATION-----------
+\section{\textbf{Education}}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Bachelor of Computer Engineering}{GPA: 3.64}
+{Institut Teknologi Sepuluh Nopember, Surabaya}{2022-Present}
+\resumeSubHeadingListEnd
+\vspace{-5.5mm}
+%
+
+%-----------PROJECTS-----------------
+\section{\textbf{Personal Projects}}
+\resumeSubHeadingListStart
+
+\resumeProject
+{Smart Wheelchair with Eye Movement Control} % Project Name
+{A smart wheelchair system controlled by eye movement, integrating computer vision and embedded hardware.} % Project Description
+{} % Event Dates
+
+\resumeItemListStart
+\item {Developed a smart wheelchair system that allows users to control movement using eye gaze, enhancing accessibility for individuals with mobility impairments.}
+\item {Integrated real-time eye tracking and gesture recognition using Python and OpenCV, enabling intuitive navigation and control.}
+\item {Implemented embedded hardware components (Arduino/ESP32) for motor control and sensor feedback, ensuring reliable operation.}
+\item {Collaborated with a team to design, prototype, and test the system, resulting in a functional prototype showcased at the GEMASTIK XVII competition.}
+\item {Technology Used: Python, OpenCV, Arduino/ESP32, C/C++, computer vision algorithms.}
+\resumeItemListEnd
+\vspace{-2mm}
+
+\resumeProject
+{Sappy: Multi-Role Livestock Management App (Flutter)} % Project Name
+{A livestock management app for multiple roles (Farmer, Admin, Doctor) with NFC support.}
+{} % Event Dates
+
+\resumeItemListStart
+\item {Provides role-based access and dashboards for farmers, administrators, and doctors, all in a unified mobile app.}
+\item {Supports English and Indonesian languages using built-in localization.}
+\item {Implements state management via Provider and enables NFC functionality for secure identification and tracking.}
+\item {Includes data visualization, authentication, and environmental configuration using modern Flutter ecosystem packages.}
+\item {Technology Used: Flutter, Dart, Provider, NFC, fl\_chart, carousel\_slider, custom fonts/assets.}
+\resumeItemListEnd
+\vspace{-2mm}
+
+\resumeProject
+{Comic Reading Web Application} % Project Name
+{A web-based comic reading platform supporting manga, manhua, and manhwa with optimized reading experience.} % Project Description
+{} % Event Dates
+{}
+\resumeItemListStart
+\item {Developed a responsive comic reading platform supporting manga, manhua, and manhwa with smooth page navigation and optimized image rendering.}
+\item {Implemented core reading features including chapter management, reading history, authentication, and adaptive layouts for multiple devices.}
+\item {Technology Used: React (frontend), Laravel (backend/API), PostgreSQL (database), with modular component architecture and optimized asset handling.}
+\resumeItemListEnd
+\vspace{-2mm}
+
+\resumeProject
+{Tree Canopy Detection System} % Project Name
+{An automated tree canopy detection system using deep learning and drones for efficient forest monitoring.} % Project Description
+{} % Event Dates
+{}
+\resumeItemListStart
+    \item {Developed an automated tree canopy detection system using deep learning and drones for efficient forest monitoring.}
+    \item {Curated and annotated a custom dataset of drone-captured forest imagery using {Roboflow}, implementing manual bounding box labeling for diverse tree species.}
+    \item {Applied specialized data augmentation techniques (rotation, brightness adjustment, and mosaic) to improve model robustness against varying lighting conditions and aerial perspectives.}
+    \item {Implemented a {YOLOv12} model for high-precision object detection and classification on tree canopies.}
+    \item {Technology Used: Python, Ultralytics, {Roboflow}, OpenCV, and Deep Learning.}
+\resumeItemListEnd
+\vspace{-2mm}
+
+% ---------------End of Projects
+\resumeSubHeadingListEnd
+\vspace{-4mm}
+
+% %-----------EXPERIENCE-----------------
+\section{\textbf{Experience}}
+\resumeSubHeadingListStart
+% Start of Experience 1
+\resumeSubheading
+{Web Developer – MIOT Webpage}
+{Multimedia and IoT Laboratory (MIOT)}
+{Surabaya}{Aug 2024- Present}
+\resumeItemListStart
+\item {Designed and developed the official MIOT laboratory webpage to showcase research, publications, and team members.}
+\item {Implemented a responsive and modern user interface using React.js and Tailwind CSS, ensuring accessibility across devices.}
+\item {Integrated dynamic content management for news, events, and member profiles using JSON-based data structures.}
+\item {Collaborated with lab members to gather requirements, iterate on design, and deploy the site using GitHub Pages.}
+\item {Optimized site performance and SEO, and provided documentation for future maintenance and updates.}
+\resumeItemListEnd
+\vspace{-4mm}
+
+\clearpage
+
+\resumeSubheading
+{Research Assistant – Multimedia and IoT Lab (B300)}{Multimedia and IoT Laboratory (MIOT)}
+{Surabaya}{April - June 2025}
+\resumeItemListStart
+\item {Conducted research on deploying deep learning models on edge devices using NVIDIA Jetson Nano, focusing on computer vision tasks.}
+\item {Developed and optimized object detection pipelines using Python and C++ with MobileNet-SSD, YOLOv5n, and YOLOv11s architectures.}
+\item {Explored model conversion and acceleration techniques with ONNX and NVIDIA TensorRT for real-time inference.}
+\item {Integrated and evaluated models within the NVIDIA DeepStream SDK for efficient video analytics and deployment.}
+\item {Benchmarked performance and resource utilization to optimize inference speed and accuracy in constrained environments.}
+\resumeItemListEnd
+\vspace{-2mm}
+
+\resumeSubheading
+{Lab Teaching Assistant – Basic Programming}{Multimedia and IoT Laboratory (MIOT)}
+{Surabaya}{Aug 2025 - Nov 2025}
+\resumeItemListStart
+\item {Developed and maintained lab materials, including coding exercises and troubleshooting guides during practicum, while also being responsible for deploying and maintaining the DMOJ online judge website used in coursework.}
+\item {Guided students through practical assignments in C/C++, providing real-time support and technical explanations.}
+\item {Evaluated student submissions, provided constructive feedback, and contributed to grading rubrics to ensure fair and consistent assessment.}
+\item {Organized and led review sessions before exams, addressing common misconceptions and reinforcing key programming concepts.}
+\resumeItemListEnd
+\vspace{-2mm}
+
+
+\resumeSubheading
+{Lab Teaching Assistant – Digital Systems}{Robotics and Digital Systems Laboratory (B401)}
+{Surabaya}{Mar 2025 - May 2025}
+\resumeItemListStart
+\item {Conducted lab sessions for \textit{Rangkaian Digital}, supporting over 100 undergraduate students each semester.}
+\item {Developed and maintained lab materials, including hardware schematics and troubleshooting guides for digital logic experiments.}
+\item {Guided students through practical assignments in digital circuit design, providing real-time support and technical explanations.}
+\item {Collaborated with faculty to improve lab workflows, implement new teaching tools, and enhance the overall learning experience.}
+\item {Organized and led review sessions before exams, addressing common misconceptions and reinforcing key concepts in digital systems.}
+\resumeItemListEnd
+\vspace{-2mm}
+
+\resumeSubheading
+{Lab Teaching Assistant – Telemathics Workshop}{Robotics and Digital Systems Laboratory (B401)}
+{Surabaya}{Mar 2025 - May 2025}
+\resumeItemListStart
+\item {Prepared and developed practicum modules and instructional materials for \textit{Workshop Telematika}, ensuring structured, hands-on learning for undergraduate students.}
+\item {Supervised and guided students during laboratory sessions, particularly in hardware-oriented activities including manual soldering, 3D design for prototyping, hot air rework (blower) soldering,  reflow soldering, and 3D printing.}
+\item {Provided real-time technical assistance in C/C++ programming and microcontroller-based experiments, helping students troubleshoot both software and hardware issues.}
+\item {Assessed student practicum results, delivered constructive feedback, and contributed to grading criteria to ensure fair and consistent evaluation.}
+\item {Organized and led review sessions prior to assessments, reinforcing key concepts and practical skills.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-5.5mm}
+\section{\textbf{Positions of Responsibility}}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Team Leader – GEMASTIK XVII (IoT Division)}
+{Semarang State University (UNNES)}{Semarang}
+% {Sambal Telur Team (ITS)}
+% {Semarang State University (UNNES)}
+{Jan - Nov 2024}
+
+\resumeItemListStart
+\item {Led a team representing Institut Teknologi Sepuluh Nopember in the Smart Devices, Embedded Systems, and IoT Division at GEMASTIK XVII.}
+\item {Coordinated the team’s efforts across software and hardware components, managed timelines, and delegated responsibilities.}
+\item {Developed a smart wheelchair system controllable via eye movement, integrating computer vision and embedded hardware.}
+\item {Secured the National Finalist award (Juara Harapan) through efficient planning, ideation, and execution of an IoT-based innovation.}
+\resumeItemListEnd
+\vspace{-4mm}
+
+
+\resumeSubheading
+{Head of Logistics Department – Multimedia and Game Event (MAGE X)}
+{Multimedia and Game Event (MAGE X)}
+{Surabaya}{Jan - November 2024}
+\resumeItemListStart
+\item {Led the logistics team for MAGE X, a major university-level multimedia and game competition event.}
+\item {Coordinated procurement, inventory management, and distribution of event materials and equipment.}
+\item {Developed and executed logistics plans to ensure timely setup and smooth operation across multiple event venues.}
+\item {Collaborated with other departments to address real-time needs and resolve logistical challenges during the event.}
+\item {Managed vendor relations, budget tracking, and post-event inventory reconciliation.}
+\resumeItemListEnd
+\vspace{-4mm}
+
+\
+
+\resumeSubHeadingListEnd
+
+\end{document}
