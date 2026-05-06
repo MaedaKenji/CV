@@ -1,0 +1,280 @@
+%-------------------------
+% Resume in Latex – Apple Developer Academy Application
+% Author: Agus Fuad Mudhofar
+% License : MIT
+%------------------------
+
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{0pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+\usepackage[most]{tcolorbox}
+\tcbset{
+  frame code={}
+  center title,
+  left=0pt,
+  right=0pt,
+  top=0pt,
+  bottom=0pt,
+  colback=gray!20,
+  colframe=white,
+  width=\dimexpr\textwidth\relax,
+  enlarge left by=-2mm,
+  boxsep=4pt,
+  arc=0pt,outer arc=0pt,
+}
+
+\urlstyle{same}
+\raggedright{}
+\setlength{\tabcolsep}{0in}
+\setlength{\footskip}{4.5pt}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule{} \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+    \par
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+\newcommand{\name}{Agus Fuad Mudhofar}
+\newcommand{\course}{Computer Engineering}
+\newcommand{\phone}{8882111890}
+\newcommand{\emaila}{agusfuad090@gmail.com}
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+
+%----------HEADING-----------------
+{
+  \begin{tabularx}{\linewidth}{L r}                                                                                                                                                    \\
+    \textbf{\Large \name}                           & {\raisebox{0.0\height}{\footnotesize \faPhone}\ +62-\phone}                                                        \\
+    {Institut Teknologi Sepuluh Nopember, Surabaya} & \href{mailto:\emaila}{\raisebox{0.0\height}{\footnotesize \faEnvelope}\ {\emaila}}                                 \\
+                                                    & \href{https://github.com/MaedaKenji}{\raisebox{0.0\height}{\footnotesize \faGithub}\ {GitHub Profile}}             \\
+                                                    & \href{https://www.linkedin.com/in/agus4434/}{\raisebox{0.0\height}{\footnotesize \faLinkedin}\ {LinkedIn Profile}}
+  \end{tabularx}
+}
+
+%-----------EDUCATION-----------
+\section{\textbf{Education}}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Bachelor of Computer Engineering}{GPA: 3.64}
+{Institut Teknologi Sepuluh Nopember, Surabaya}{2022\--Present}
+\resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+%-----------EXPERIENCE-----------------
+\section{\textbf{Experience}}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Research Intern – Mobile Developer \& Computer Vision Engineer}{Badan Riset dan Inovasi Nasional (BRIN)}
+{Bandung}{Feb \-- July 2026}
+
+\vspace{0mm}
+\begin{itemize}[leftmargin=1.5ex, label={}]
+
+\item{a. Full-Stack \& Application Development}
+    \begin{itemize}[label=-]
+        \item {Built a cross-platform Flutter app (Mobile, Tablet, Desktop) to calculate NPK nutrient requirements for vegetable crops, deployed to multiple screen sizes.}
+        \item {Engineered a RESTful API backend with Laravel 12 and PostgreSQL; implemented secure token-based authentication using Laravel Sanctum.}
+        \item {Designed an intuitive, responsive UI in Flutter, ensuring a seamless experience across all device form factors.}
+    \end{itemize}
+
+\item{b. AI \& Computer Vision Systems}
+    \begin{itemize}[label=-]
+        \item {Developed a visual awareness system leveraging camera input and deep learning models to extract contextual environmental information, including user attributes (e.g., clothing) and surrounding objects.}
+        \item {Integrated computer vision outputs with a Large Language Model (LLM) to generate enriched contextual understanding, enabling interpretation of user activities such as walking, cycling, motorcycling, and driving.}
+        \item {Designed and developed a specialized module for a processing pipeline, integrating object detection, human action recognition, and semantic reasoning to enhance situational awareness.}
+    \end{itemize}
+\end{itemize}
+
+
+
+% \resumeItemListStart
+% \item {Built a cross-platform Flutter app (Mobile, Tablet, Desktop) to calculate NPK nutrient requirements for vegetable crops, deployed to multiple screen sizes.}
+% \item {Engineered a RESTful API backend with Laravel 12 and PostgreSQL; implemented secure token-based authentication using Laravel Sanctum.}
+% \item {Designed an intuitive, responsive UI in Flutter, ensuring a seamless experience across all device form factors.}
+% \item {Developed a visual awareness system leveraging camera input and deep learning models to extract contextual environmental information, including user attributes (e.g., clothing) and surrounding objects.}
+% \item {Integrated computer vision outputs with a Large Language Model (LLM) to generate enriched contextual understanding, enabling interpretation of user activities such as walking, cycling, motorcycling, and driving.}
+% \item {Designed and developed a specialized module for a processing pipeline, integrating object detection, human action recognition, and semantic reasoning to enhance situational awareness.}
+
+
+% \vspace{-2mm}
+\resumeSubheading
+{IoT Developer – Smart Wheelchair Development}{Multimedia and IoT Laboratory (MIOT)}
+{Surabaya}{Aug 2024 \-- Present}
+\resumeItemListStart
+\item {Maintained and enhanced a smart wheelchair system utilizing deep learning\-based computer vision for hands\-free navigation and control.}
+\item {Integrated real\-time eye\-gaze and facial gesture recognition using Python and OpenCV, improving system responsiveness and user accessibility.}
+\item {Collaborated with faculty and student teams to refine model architectures, optimize inference speed, and troubleshoot hardware\-software integration issues.}
+\item {Developed custom microcontroller firmware (C/C++) for reliable motor actuation and sensor feedback, ensuring safe and accurate wheelchair movement.}
+\item {Documented system upgrades, conducted user testing, and presented results in lab meetings and academic showcases.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Research Assistant – Multimedia and IoT Lab (B300)}{Multimedia and IoT Laboratory (MIOT)}
+{Surabaya}{April \-- June 2025}
+\resumeItemListStart
+\item {Conducted research on deploying deep learning models on edge devices using NVIDIA Jetson Nano, focusing on computer vision tasks.}
+\item {Developed and optimized object detection pipelines using Python and C++ with MobileNet\--SSD, YOLOv5n, and YOLOv11s architectures.}
+\item {Explored model conversion and acceleration techniques with ONNX and NVIDIA TensorRT for real\--time inference.}
+\item {Integrated and evaluated models within the NVIDIA DeepStream SDK for efficient video analytics and deployment.}
+\item {Benchmarked performance and resource utilization to optimize inference speed and accuracy in constrained environments.}
+\resumeItemListEnd
+\clearpage
+% \vspace{-2mm}
+\resumeSubheading
+{Lab Teaching Assistant – Basic Programming}{Multimedia and IoT Laboratory (MIOT)}
+{Surabaya}{Aug \-- Nov 2025}
+\resumeItemListStart
+\item {Developed and maintained lab materials, including coding exercises and troubleshooting guides during practicum, while also being responsible for deploying and maintaining the DMOJ online judge website used in coursework.}
+\item {Guided students through practical assignments in C/C++, providing real\--time support and technical explanations.}
+\item {Evaluated student submissions, provided constructive feedback, and contributed to grading rubrics to ensure fair and consistent assessment.}
+\item {Organized and led review sessions before exams, addressing common misconceptions and reinforcing key programming concepts.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Workshop Assistant – International Workshop on Deep Learning}
+{Institut Teknologi Sepuluh Nopember}{Surabaya}
+{24 \-- 29 Nov 2025}
+
+\resumeItemListStart
+\item {Assisted in the execution of a 5\--day international workshop focused on machine learning and deep learning applications for assistive technology.}
+\item {Provided hands\--on support to participants by helping resolve technical issues and learning difficulties during workshop sessions.}
+\item {Supported professors and speakers in running the event, including administrative coordination and on\--site logistical tasks.}
+\item {Contributed to creating an inclusive and supportive learning environment for students from Malaysia, Vietnam, the Philippines, Ethiopia, Pakistan, and Indonesia.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-5mm}
+
+%-----------PROJECTS-----------------
+\section{\textbf{Projects}}
+\resumeSubHeadingListStart
+
+\resumeProject
+{Sappy: Multi-Role Livestock Management App}
+{Flutter mobile app for farmers, admins, and doctors with NFC, localization, and data visualization.}
+{}{}
+\resumeItemListStart
+\item {Provides role\--based access and dashboards for farmers, administrators, and doctors, all in a unified mobile app.}
+\item {Supports English and Indonesian languages using built\--in localization.}
+\item {Implements state management via Provider and enables NFC functionality for secure identification and tracking.}
+\item {Includes data visualization, authentication, and environmental configuration using modern Flutter ecosystem packages.}
+\item {Technology Used: Flutter, Dart, Provider, NFC, fl\_chart, carousel\_slider, custom fonts/assets.}
+\resumeItemListEnd
+\vspace{-2mm}
+
+\resumeProject
+{Comic Reading Web Application}
+{Responsive comic platform (manga/manhua/manhwa) with auth, reading history, and chapter management.}
+{}{}
+\resumeItemListStart
+\item {Developed a responsive comic reading platform supporting manga, manhua, and manhwa with smooth page navigation and optimized image rendering.}
+\item {Implemented core reading features including chapter management, reading history, authentication, and adaptive layouts for multiple devices.}
+\item {Technology Used: React (frontend), Laravel (backend/API), PostgreSQL (database), with modular component architecture and optimized asset handling.}
+\resumeItemListEnd
+\vspace{-2mm}
+
+\resumeProject
+{Smart Wheelchair with Eye Movement Control}
+{Computer vision-driven wheelchair controllable via eye gaze – 4th place in GEMASTIK XVII.}
+{}{}
+\resumeItemListStart
+\item {Developed a computer vision system for real-time eye gaze detection and facial gesture recognition, enabling hands-free control of a motorized wheelchair.}
+\item {Integrated eye-tracking algorithms with embedded hardware (Arduino/ESP32) and motor controllers to provide responsive and reliable wheelchair navigation.}
+\item {Selected as a National Finalist in GEMASTIK XVII, the premier national competition for technology and innovation among Indonesian university students.}
+\item {Technology Used: Python, OpenCV, MediaPipe, Arduino/ESP32, motor control systems.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-4mm}
+
+%-----------SKILLS-----------------
+\section{\textbf{Technical Skills}}
+\begin{itemize}[leftmargin=0.05in, label={}]
+  \small{\item{
+        \textbf{Languages}{: Dart, Python, JavaScript, C/C++, HTML+CSS} \\
+        \textbf{Mobile}{: Flutter (cross-platform), Provider, NFC, responsive UI design} \\
+        \textbf{Web \& Backend}{: React.js, Laravel, Node.js, PostgreSQL, REST APIs} \\
+        \textbf{Tools}{: Git, GitHub, VS Code, Figma} \\
+        \textbf{Soft Skills}{: Problem Solving, Fast Learning, Teamwork, Adaptability}
+        }}
+\end{itemize}
+\vspace{-16pt}
+
+\end{document}
