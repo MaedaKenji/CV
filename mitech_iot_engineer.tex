@@ -1,0 +1,293 @@
+%-------------------------
+% Resume in Latex - Tailored for IoT Engineer at MITech
+% Author: Agus Fuad Mudhofar
+% License : MIT
+%------------------------
+
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+\usepackage[most]{tcolorbox}
+\tcbset{
+	frame code={}
+	center title,
+	left=0pt,
+	right=0pt,
+	top=0pt,
+	bottom=0pt,
+	colback=gray!20,
+	colframe=white,
+	width=\dimexpr\textwidth\relax,
+	enlarge left by=-2mm,
+	boxsep=4pt,
+	arc=0pt,outer arc=0pt,
+}
+
+\urlstyle{same}
+
+\raggedright{}
+\setlength{\tabcolsep}{0in}
+\setlength{\footskip}{4.5pt}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule{} \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+    \par
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+%%%%%% DEFINE ELEMENTS HERE %%%%%%%
+\newcommand{\name}{Agus Fuad Mudhofar} % Your Name
+\newcommand{\course}{Computer Engineering} % Your Program
+\newcommand{\phone}{8882111890} % Your Phone Number
+\newcommand{\emaila}{agusfuad090@gmail.com} %Email 1
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+%----------HEADING-----------------
+
+{
+  \begin{tabularx}{\linewidth}{L r}                                                                                                                                                    \\
+    \textbf{\Large \name}                           & {\raisebox{0.0\height}{\footnotesize \faPhone}\ +62-\phone}                                                        \\
+    {Institut Teknologi Sepuluh Nopember, Surabaya} & \href{mailto:\emaila}{\raisebox{0.0\height}{\footnotesize \faEnvelope}\ {\emaila}}                                 \\
+                                                    & \href{https://maedakenji.github.io/Portofolio/}{\raisebox{0.0\height}{\footnotesize \faGithub}\ {GitHub Profile}}             \\
+                                                    & \href{https://www.linkedin.com/in/agus4434/}{\raisebox{0.0\height}{\footnotesize \faLinkedin}\ {LinkedIn Profile}}
+  \end{tabularx}
+}
+
+%-----------EDUCATION-----------
+\section{\textbf{Education}}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Bachelor of Computer Engineering}{GPA: 3.64}
+{Institut Teknologi Sepuluh Nopember, Surabaya}{2022--Present}
+\resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+%-----------EXPERIENCE-----------
+\section{\textbf{Experience}}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Research Intern -- Mobile Developer \& Computer Vision Engineer}{Badan Riset dan Inovasi Nasional (BRIN)}
+{Bandung}{Feb -- July 2026}
+\vspace{0mm}
+\begin{itemize}[leftmargin=1.5ex, label={}]
+\item{a. Full-Stack \& Application Development}
+    \begin{itemize}[label=-]
+        \item {Built a cross-platform Flutter app (Mobile, Tablet, Desktop) to calculate NPK nutrient requirements for vegetable crops.}
+        \item {Engineered a RESTful API backend with Laravel 12 and PostgreSQL, implementing Laravel Sanctum for security.}
+    \end{itemize}
+\item{b. AI \& Computer Vision Systems}
+    \begin{itemize}[label=-]
+        \item {Developed a situational awareness system utilizing camera input, deep learning models, and LLM integration to interpret activities (walking, driving) and recognize human actions.}
+    \end{itemize}
+\end{itemize}
+
+\vspace{-2mm}
+\resumeSubheading
+{IoT Developer -- Smart Wheelchair Development}{Multimedia and IoT Laboratory (MIOT)}
+{Surabaya}{Aug 2024 -- Present}
+\resumeItemListStart
+\item {Maintained and enhanced a smart wheelchair system utilizing deep learning-based computer vision for hands-free navigation.}
+\item {Integrated real-time eye-gaze and facial gesture recognition using Python and OpenCV, improving system responsiveness.}
+\item {Developed custom microcontroller firmware (C/C++) for motor actuation and sensor feedback, ensuring safe navigation.}
+\resumeItemListEnd
+
+\vspace{-2mm}
+\resumeSubheading
+{Research Assistant -- Multimedia and IoT Lab (B300)}{Multimedia and IoT Laboratory (MIOT)}
+{Surabaya}{April -- June 2025}
+\resumeItemListStart
+\item {Conducted research on deploying deep learning models on edge devices (NVIDIA Jetson Nano) for computer vision tasks.}
+\item {Developed object detection pipelines (Python/C++) using MobileNet-SSD, YOLOv5n, and YOLOv11s architectures.}
+\item {Optimized model inference using ONNX and NVIDIA TensorRT, and integrated them into NVIDIA DeepStream SDK.}
+\resumeItemListEnd
+
+\vspace{-2mm}
+\resumeSubheading
+{Lab Teaching Assistant -- Telemathics Workshop}{Robotics and Digital Systems Laboratory (B401)}
+{Surabaya}{Mar 2025 -- May 2025}
+\resumeItemListStart
+\item {Supervised students in hardware prototyping: manual soldering, hot air rework, reflow soldering, and 3D printing.}
+\item {Provided technical assistance in C/C++ programming and microcontroller-based hardware-software troubleshooting.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+%-----------PROJECTS-----------
+\section{\textbf{Projects}}
+\resumeSubHeadingListStart
+
+\resumeProject
+{Smart Wheelchair with Eye Movement Control}
+{A smart wheelchair system controlled by eye movement, integrating computer vision and embedded hardware.}
+{}
+{}
+\resumeItemListStart
+\item {Designed and prototyped a smart wheelchair enabling users to control movement using eye gaze and facial gestures.}
+\item {Integrated computer vision (Python/OpenCV) with microcontroller (Arduino/ESP32) actuation and sensor feedback.}
+\item {Collaborated with a team to showcase the functional prototype at the GEMASTIK XVII competition.}
+\item {Technology Used: Python, OpenCV, Arduino/ESP32, C/C++, Embedded Hardware.}
+\resumeItemListEnd
+\vspace{-2mm}
+
+\newpage
+\resumeProject
+{Dot Matrix Ping Pong Game (Embedded System)}
+{A microcontroller-based two-player Ping Pong game using an 8x32 LED dot matrix and custom C++ firmware.}
+{}
+{}
+\resumeItemListStart
+\item {Implemented game mechanics, scorekeeping, and animations on an 8x32 LED matrix using MD\_Parola and MD\_MAX72xx.}
+\item {Designed circuit schematics featuring analog paddle control (potentiometers) and digital smash buttons via SPI.}
+\item {Technology Used: C++ (Arduino/ESP32), SPI, MD\_Parola, MD\_MAX72xx, Circuit Design.}
+\resumeItemListEnd
+\vspace{-2mm}
+
+\resumeProject
+{Sappy: Multi-Role Livestock Management App}
+{A livestock management app for multiple roles (Farmer, Admin, Doctor) with NFC tracking support.}
+{}
+{}
+\resumeItemListStart
+\item {Implemented state management via Provider and enabled NFC functionality for secure livestock identification and tracking.}
+\item {Technology Used: Flutter, Dart, NFC, Provider, fl\_chart, carousel\_slider.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-4mm}
+
+%-----------ORGANIZATIONS / RESPONSIBILITY-----------
+\section{\textbf{Positions of Responsibility}}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Team Leader -- GEMASTIK XVII (IoT Division)}{Semarang State University (UNNES)}
+{Semarang}{Jan -- Nov 2024}
+\resumeItemListStart
+\item {Led a team representing ITS in the Smart Devices, Embedded Systems, and IoT Division at GEMASTIK XVII.}
+\item {Coordinated software and hardware components, managed timelines, and secured the National Finalist (Juara Harapan) award.}
+\resumeItemListEnd
+\vspace{-4mm}
+
+\resumeSubheading
+{PIC IoT Division -- TIM Kawal GEMASTIK}{Institut Teknologi Sepuluh Nopember (ITS)}
+{Surabaya}{Jan -- Nov 2025}
+\resumeItemListStart
+\item {Coordinated communication between faculty supervisors, professors, mentors, and participating student teams in the IoT division.}
+\item {Evaluated proposals and technical readiness, and organized mentoring sessions with IoT domain experts.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+\section{\textbf{Certifications}}
+\resumeSubHeadingListStart
+\resumeSubheading
+{English Proficiency Certification -- CEFR Level B2}{}
+{DynEd International}{2024}
+\resumeItemListStart
+\item {Achieved English proficiency equivalent to the Common European Framework of Reference for Languages (CEFR) Level B2.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------SKILLS & INTERESTS-----------
+\section{\textbf{Technical Skills and Interests}}
+\begin{itemize}[leftmargin=0.05in, label={}]
+  \small{\item{
+        \textbf{Languages}{: C/C++, Python, Dart, Javascript, HTML+CSS } \\
+        \textbf{Hardware \& IoT}{: Arduino, ESP32, NVIDIA Jetson Nano, Raspberry Pi, Microcontrollers, SPI, I2C, UART, Soldering, 3D Printing, PCB/Circuit Design } \\
+        \textbf{Frameworks \& Libraries}{: OpenCV, Flutter, React.js, Laravel, FastAPI, TensorRT, ONNX, DeepStream SDK } \\
+        \textbf{Databases \& Cloud}{: PostgreSQL, MySQL, MongoDB, Firebase } \\
+        \textbf{Relevant Coursework}{: Embedded Systems, Microprocessors, Digital Systems, Computer Networks, Data Structures \& Algorithms } \\
+        \textbf{Languages Info}{: Indonesian (Native), English (B2 CEFR - DynEd Certified) } \\
+        \textbf{Soft Skills}{: Problem Solving, Team Collaboration, Technical Communication, Adaptability, Self-learning}
+        }}
+\end{itemize}
+\vspace{-16pt}
+
+\end{document}
