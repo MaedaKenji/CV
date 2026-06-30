@@ -1,0 +1,293 @@
+%-------------------------
+% Resume in Latex - Tailored for Back End Engineer (Indonesian)
+% Author: Agus Fuad Mudhofar
+% License : MIT
+%------------------------
+
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+\usepackage[most]{tcolorbox}
+\tcbset{
+	frame code={}
+	center title,
+	left=0pt,
+	right=0pt,
+	top=0pt,
+	bottom=0pt,
+	colback=gray!20,
+	colframe=white,
+	width=\dimexpr\textwidth\relax,
+	enlarge left by=-2mm,
+	boxsep=4pt,
+	arc=0pt,outer arc=0pt,
+}
+
+\urlstyle{same}
+
+\raggedright{}
+\setlength{\tabcolsep}{0in}
+\setlength{\footskip}{4.5pt}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule{} \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+    \par
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+%%%%%% DEFINE ELEMENTS HERE %%%%%%%
+\newcommand{\name}{Agus Fuad Mudhofar} % Nama Anda
+\newcommand{\course}{Teknik Komputer} % Program Studi
+\newcommand{\phone}{8882111890} % Nomor Telepon
+\newcommand{\emaila}{agusfuad090@gmail.com} % Email
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+%----------HEADING-----------------
+
+{
+  \begin{tabularx}{\linewidth}{L r}                                                                                                                                                    \\
+    \textbf{\Large \name}                           & {\raisebox{0.0\height}{\footnotesize \faPhone}\ +62-\phone}                                                        \\
+    {Institut Teknologi Sepuluh Nopember, Surabaya} & \href{mailto:\emaila}{\raisebox{0.0\height}{\footnotesize \faEnvelope}\ {\emaila}}                                 \\
+                                                    & \href{https://maedakenji.github.io/Portofolio/}{\raisebox{0.0\height}{\footnotesize \faGithub}\ {Profil GitHub}}             \\
+                                                    & \href{https://www.linkedin.com/in/agus4434/}{\raisebox{0.0\height}{\footnotesize \faLinkedin}\ {Profil LinkedIn}}
+  \end{tabularx}
+}
+
+%-----------PENDIDIKAN-----------
+\section{\textbf{Pendidikan}}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Sarjana Teknik Komputer}{IPK: 3.64}
+{Institut Teknologi Sepuluh Nopember, Surabaya}{2022 \-- 2026}
+\resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+%-----------PENGALAMAN-----------
+\section{\textbf{Pengalaman}}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Magang Riset -- Back End Developer \& Computer Vision Engineer}{Badan Riset dan Inovasi Nasional (BRIN)}
+{Bandung}{Feb -- Jul 2026}
+\vspace{0mm}
+\begin{itemize}[leftmargin=1.5ex, label={}]
+\item{a. Pengembangan Back-End \& Aplikasi}
+    \begin{itemize}[label=-]
+        \item {Merancang dan membangun RESTful API backend menggunakan Laravel 12 dan database PostgreSQL untuk memproses logika perhitungan nutrisi NPK tanaman.}
+        \item {Mengimplementasikan keamanan API dan autentikasi pengguna menggunakan token terenkripsi via Laravel Sanctum.}
+        \item {Merancang UI responsif di Flutter untuk berkomunikasi secara efisien dengan backend REST API melalui request HTTP.}
+    \end{itemize}
+\item{b. Sistem AI \& Integrasi API}
+    \begin{itemize}[label=-]
+        \item {Membangun modul pemrosesan data untuk mengintegrasikan model deep learning deteksi objek dan aksi dengan API Large Language Model (LLM) untuk analisis lingkungan.}
+    \end{itemize}
+\end{itemize}
+
+\vspace{-2mm}
+\resumeSubheading
+{Asisten Praktikum Lab -- Pemrograman Dasar}{Multimedia and IoT Laboratory (MIOT)}
+{Surabaya}{Agu 2025 -- Nov 2025}
+\resumeItemListStart
+\item {Bertanggung jawab mendeploy, mengonfigurasi, dan memelihara website online judge DMOJ berbasis Linux untuk ujian praktikum.}
+\item {Menyusun modul praktikum pemrograman dasar C/C++ serta mendampingi mahasiswa dalam penyelesaian masalah logika dan algoritma.}
+\item {Mengevaluasi submisi kode pemrograman mahasiswa untuk memberikan umpan balik teknis yang konstruktif.}
+\resumeItemListEnd
+
+\vspace{-2mm}
+\resumeSubheading
+{Pengembang Web -- Halaman Web MIOT}{Multimedia and IoT Laboratory (MIOT)}
+{Surabaya}{Agu 2024 -- Agu 2025}
+\resumeItemListStart
+\item {Merancang dan membangun situs web resmi laboratorium MIOT menggunakan React.js dan Tailwind CSS.}
+\item {Mengintegrasikan manajemen konten dinamis berbasis struktur data JSON untuk mempermudah pembaruan data anggota dan riset.}
+\item {Mengoptimalkan performa load time website serta melakukan audit SEO untuk meningkatkan keterpaparan pencarian.}
+\resumeItemListEnd
+
+\vspace{-2mm}
+\resumeSubheading
+{Asisten Praktikum Lab -- Workshop Telematika}{Robotics and Digital Systems Laboratory (B401)}
+{Surabaya}{Mar 2025 -- Mei 2025}
+\resumeItemListStart
+\item {Membimbing praktikan dalam pemrograman mikrokontroler (C/C++), integrasi hardware, dan troubleshooting sirkuit elektronik.}
+\item {Mengawasi kegiatan perakitan hardware, termasuk penyolderan sirkuit (manual, hot air rework, reflow) dan prototyping 3D printing.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Asisten Praktikum -- Pemrograman Dasar}{Multimedia and IoT Laboratory (MIOT)}
+{Surabaya}{Agu 2025 -- Nov 2025}
+\resumeItemListStart
+\item {Bertanggung jawab mendeploy, mengonfigurasi, dan memelihara website online judge DMOJ berbasis Linux untuk ujian praktikum.}
+\item {Menyusun modul praktikum pemrograman dasar C/C++ serta mendampingi mahasiswa dalam penyelesaian masalah logika dan algoritma.}
+\item {Mengevaluasi submisi kode pemrograman mahasiswa untuk memberikan umpan balik teknis yang konstruktif.}
+\item {Teknologi yang Digunakan (DMOJ): Docker, Python, Django, HTML, CSS.}
+\resumeItemListEnd
+\vspace{-2mm}
+
+\resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+%-----------PROYEK PRIBADI-----------
+\section{\textbf{Proyek Pribadi}}
+\resumeSubHeadingListStart
+
+\resumeProject
+{Aplikasi Web Membaca Komik (Laravel-React \& Express-React)}
+{Platform baca komik dengan optimasi server backend untuk menangani transfer aset gambar berukuran besar.}
+{}
+{}
+\resumeItemListStart
+\item {Membangun dua arsitektur backend backend-service terpisah (Laravel-PHP dan Express-NodeJS) untuk benchmarking throughput server.}
+\item {Mengintegrasikan MinIO sebagai S3-compatible local object storage untuk optimasi pengiriman aset komik ke client.}
+\item {Mendeploy iterasi Laravel menggunakan FrankenPHP server untuk memaksimalkan kecepatan konkurensi request backend.}
+\item {Teknologi: Laravel, Express.js, PostgreSQL, MinIO, FrankenPHP, React.js.}
+\resumeItemListEnd
+\vspace{-2mm}
+
+\resumeProject
+{Sappy: Aplikasi Manajemen Peternakan Multi-Peran}
+{Aplikasi mobile manajemen ternak dengan peran terdistribusi (Peternak, Admin, Dokter) dengan autentikasi data.}
+{}
+{}
+\resumeItemListStart
+\item {Mengimplementasikan manajemen state (Provider) dan komunikasi API dengan integrasi modul NFC untuk tracking ID ternak secara unik.}
+\item {Teknologi: Flutter, Dart, NFC, Provider, REST API, Data Visualization.}
+\resumeItemListEnd
+\vspace{-2mm}
+
+\resumeProject
+{Kursi Roda Pintar Berbasis Pergerakan Mata}
+{Sistem navigasi kursi roda hands-free dengan integrasi computer vision dan firmware embedded hardware.}
+{}
+{}
+\resumeItemListStart
+\item {Mengembangkan firmware mikrokontroler (C/C++ pada Arduino/ESP32) untuk aktuasi motor servo/DC secara responsif.}
+\item {Memproses input gaze tracking OpenCV pada edge device untuk diterjemahkan menjadi perintah gerak fisik via komunikasi serial.}
+\item {Teknologi: Python, OpenCV, Arduino, ESP32, C/C++, Serial Communication.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-4mm}
+
+%-----------ORGANISASI & KEPANITIAAN-----------
+\section{\textbf{Tanggung Jawab Organisasi}}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{PIC Divisi IoT -- TIM Kawal GEMASTIK}{Institut Teknologi Sepuluh Nopember (ITS)}
+{Surabaya}{Jan -- Nov 2025}
+\resumeItemListStart
+\item {Mengoordinasikan komunikasi teknis dan kebutuhan administrasi pendaftaran untuk seluruh perwakilan tim ITS di divisi IoT.}
+\item {Mengevaluasi kesiapan sistem prototype IoT mahasiswa dan memfasilitasi sesi review teknis bersama dosen pembimbing.}
+\resumeItemListEnd
+\vspace{-4mm}
+
+\resumeSubheading
+{Ketua Departemen Logistik -- MAGE X (Multimedia and Game Event)}{Multimedia and Game Event}
+{Surabaya}{Jan -- Nov 2024}
+\resumeItemListStart
+\item {Memimpin manajemen inventori barang, pengadaan perangkat teknis, dan mengalokasikan anggaran logistik event regional.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+%-----------KEAHLIAN TEKNIS-----------
+\section{\textbf{Keahlian Teknis dan Minat}}
+\begin{itemize}[leftmargin=0.05in, label={}]
+  \small{\item{
+        \textbf{Bahasa Pemrograman}{: JavaScript, TypeScript (Node.js), PHP, Python, C/C++, SQL, Dart, HTML+CSS } \\
+        \textbf{Framework \& Library}{: Laravel, Express.js, React.js, FastAPI, Flask, Tailwind CSS, Laravel Sanctum } \\
+        \textbf{Cloud, Database \& Storage}{: PostgreSQL, MySQL, MongoDB, Firebase, Redis, MinIO (S3-compatible) } \\
+        \textbf{Alat \& Infrastruktur}{: Git, GitHub, Docker (dasar), Linux/Bash, Nginx, FrankenPHP, DMOJ, Postman } \\
+        \textbf{Mata Kuliah Relevan}{: Sistem Manajemen Basis Data, Jaringan Komputer, Struktur Data \& Algoritma, Sistem Operasi, Rekayasa Perangkat Lunak } \\
+        \textbf{Bahasa \& Sertifikasi}{: Indonesia (Native), Inggris (CEFR Level B2 - DynEd Certified) } \\
+        \textbf{Soft Skills}{: Pemecahan Masalah, Kolaborasi Tim, Komunikasi Teknis, Pembelajaran Mandiri (Self-learning)}
+        }}
+\end{itemize}
+\vspace{-16pt}
+
+\end{document}

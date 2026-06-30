@@ -1,0 +1,268 @@
+%-------------------------
+% Resume in Latex - Tailored for Full-Stack & DevOps Engineer (English)
+% Author: Agus Fuad Mudhofar
+% License : MIT
+%------------------------
+
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+\usepackage[most]{tcolorbox}
+\tcbset{
+	frame code={}
+	center title,
+	left=0pt,
+	right=0pt,
+	top=0pt,
+	bottom=0pt,
+	colback=gray!20,
+	colframe=white,
+	width=\dimexpr\textwidth\relax,
+	enlarge left by=-2mm,
+	boxsep=4pt,
+	arc=0pt,outer arc=0pt,
+}
+
+\urlstyle{same}
+
+\raggedright{}
+\setlength{\tabcolsep}{0in}
+\setlength{\footskip}{4.5pt}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule{} \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+    \par
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,label={}]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+%%%%%% DEFINE ELEMENTS HERE %%%%%%%
+\newcommand{\name}{Agus Fuad Mudhofar} % Your Name
+\newcommand{\course}{Computer Engineering} % Your Program
+\newcommand{\phone}{8882111890} % Your Phone Number
+\newcommand{\emaila}{agusfuad090@gmail.com} % Email
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+%----------HEADING-----------------
+
+{
+  \begin{tabularx}{\linewidth}{L r}                                                                                                                                                    \\
+    \textbf{\Large \name}                           & {\raisebox{0.0\height}{\footnotesize \faPhone}\ +62-\phone}                                                        \\
+    {Institut Teknologi Sepuluh Nopember, Surabaya} & \href{mailto:\emaila}{\raisebox{0.0\height}{\footnotesize \faEnvelope}\ {\emaila}}                                 \\
+                                                    & \href{https://maedakenji.github.io/Portofolio/}{\raisebox{0.0\height}{\footnotesize \faGithub}\ {GitHub Profile}}             \\
+                                                    & \href{https://www.linkedin.com/in/agus4434/}{\raisebox{0.0\height}{\footnotesize \faLinkedin}\ {LinkedIn Profile}}
+  \end{tabularx}
+}
+
+%-----------EDUCATION-----------
+\section{\textbf{Education}}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Bachelor of Computer Engineering}{GPA: 3.64}
+{Institut Teknologi Sepuluh Nopember, Surabaya}{2022 \-- 2026}
+\resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+%-----------WORK EXPERIENCE-----------
+\section{\textbf{Experience}}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Research Intern – Mobile \& Full-Stack Developer}{Badan Riset dan Inovasi Nasional (BRIN)}
+{Bandung}{Feb \-- July 2026}
+\resumeItemListStart
+\item {Designed and engineered a cross-platform Flutter application deployed for Mobile, Tablet, and Desktop environments to calculate agricultural nutrient requirements.}
+\item {Developed and optimized a RESTful API backend using Laravel 12 and PostgreSQL, implementing token-based authentication via Laravel Sanctum.}
+\item {Architected the application codebase as a monorepo to streamline multi-environment development, local testing, and build pipelines.}
+\item {Implemented automated workflows and clean backend/frontend separation to enhance code maintainability and deployment efficiency.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Front End Developer}{Multimedia and IoT Laboratory (MIOT)}
+{Surabaya}{Aug 2024 \-- Aug 2025}
+\resumeItemListStart
+\item {Designed and built the official MIOT laboratory web application using React.js and Tailwind CSS with a modular component architecture.}
+\item {Integrated dynamic content management using Git-managed JSON structures, allowing easy updates for research publications and team profiles.}
+\item {Configured continuous deployment pipelines using GitHub Pages to automate hosting and release processes.}
+\item {Optimized site performance, asset loading, and SEO configurations, resulting in improved search visibility and page load speeds.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Lab Teaching Assistant – Basic Programming \& DMOJ Maintainer}{Multimedia and IoT Laboratory (MIOT)}
+{Surabaya}{Aug 2025 \-- Nov 2025}
+\resumeItemListStart
+\item {Responsible for deploying, configuring, and maintaining the DMOJ Online Judge system used by 100+ students for practical programming assessments.}
+\item {Configured and managed containerized applications using Docker and Docker Compose to ensure sandbox security and stable judge execution.}
+\item {Maintained the Django/Python-based web interface, diagnosing system logs and optimizing runtime resources under peak submission loads.}
+\item {Guided students in structured C/C++ programming, debugging syntax errors, and explaining algorithmic concepts.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Research Assistant \& IoT Developer}{Multimedia and IoT Laboratory (MIOT)}
+{Surabaya}{Aug 2024 \-- Present}
+\resumeItemListStart
+\item {Deployed and optimized deep learning architectures (YOLO, MobileNet) on NVIDIA Jetson Nano edge devices for real-time video analytics.}
+\item {Configured embedded firmware (C/C++) for microcontrollers, establishing reliable hardware-software communication protocols.}
+\item {Collaborated with cross-functional teams to integrate software components, document system architecture, and conduct hardware/software integrations.}
+\resumeItemListEnd
+
+
+
+\resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+\newpage
+%-----------PROJECTS-----------
+\section{\textbf{Projects}}
+\resumeSubHeadingListStart
+
+\resumeProject
+{Comic Reading Web Application (Full-Stack \& DevOps)}
+{A multi-architecture comic reading platform featuring optimized image rendering and automated pipelines.}
+{}
+{}
+\resumeItemListStart
+\item {Developed and benchmarked dual backend implementations (Laravel-React and Express-React) to analyze performance in image-heavy rendering.}
+\item {Integrated MinIO as an S3-compatible local object storage solution, optimizing access speeds for gigabytes of self-hosted media.}
+\item {Configured Jenkins pipelines to automate the build, test, and deployment processes, establishing a continuous integration and delivery (CI/CD) workflow.}
+\item {Deployed the production-grade backend utilizing FrankenPHP to maximize concurrent request capacity and improve response latency.}
+\item {Technology Used: React, Laravel, Express.js, PostgreSQL, FrankenPHP, MinIO, Jenkins, Docker, Git.}
+\resumeItemListEnd
+\vspace{-2mm}
+
+\resumeSubheading
+{IoT Developer – Smart Wheelchair Development}{Multimedia and IoT Laboratory (MIOT)}
+{Surabaya}{Aug 2024 \- Present}
+\resumeItemListStart
+\item {Maintained and enhanced a smart wheelchair system utilizing deep learning\-based computer vision for hands\-free navigation and control.}
+\item {Integrated real\-time eye\-gaze and facial gesture recognition using Python and OpenCV, improving system responsiveness and user accessibility.}
+\item {Collaborated with faculty and student teams to refine model architectures, optimize inference speed, and troubleshoot hardware\-software integration issues.}
+\item {Developed custom microcontroller firmware (C/C++) for reliable motor actuation and sensor feedback, ensuring safe and accurate wheelchair movement.}
+\item {Documented system upgrades, conducted user testing, and presented results in lab meetings and academic showcases.}
+\resumeItemListEnd
+
+\resumeProject
+{Camera Calibration \& Image Processing Toolkit (Frontend \& Python)}
+{An interactive tool for computer vision experiments and camera calibration.}
+{}
+{}
+\resumeItemListStart
+\item {Built a responsive single-page application using React, TypeScript, and Vite for interactive visualization of image processing stages.}
+\item {Developed image processing algorithms and camera calibration scripts in Python with OpenCV and NumPy.}
+\item {Technology Used: React, TypeScript, Vite, Python, OpenCV, NumPy.}
+\resumeItemListEnd
+\vspace{-2mm}
+
+\resumeProject
+{Sappy: Multi-Role Livestock Management System}
+{A mobile livestock management solution for multiple user roles featuring NFC tracking.}
+{}
+{}
+\resumeItemListStart
+\item {Built a mobile app using Flutter and Dart supporting role-based dashboards (Farmer, Admin, Doctor) and multi-language localization.}
+\item {Implemented secure state management using Provider and integrated native NFC communication for physical asset tracking.}
+\item {Technology Used: Flutter, Dart, Provider, NFC, REST APIs.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+%-----------SKILLS-----------
+\section{\textbf{Technical Skills}}
+\begin{itemize}[leftmargin=0.05in, label={}]
+  \small{\item{
+        \textbf{Languages}{: JavaScript, TypeScript, PHP, Python, SQL, C/C++, HTML/CSS, Dart} \\
+        \textbf{Frontend Web/Mobile}{: React.js, Next.js, Tailwind CSS, Vite, Flutter, HTML5, CSS3} \\
+        \textbf{Backend \& Databases}{: Node.js (Express.js), Laravel, Django, PostgreSQL, MySQL} \\
+        \textbf{DevOps \& Infrastructure}{: Jenkins, Docker, Docker Compose, MinIO, FrankenPHP, Git, GitHub Actions, Linux/Bash, Nginx, GitHub Pages} \\
+        \textbf{Relevant Coursework}{: Data Structures \& Algorithms, Operating Systems, Database Management Systems, Software Engineering, Computer Networks} \\
+        \textbf{Soft Skills}{: Problem Solving, Team Collaboration, Technical Documentation, Adaptability} \\
+        \textbf{Languages Proficiency}{: Indonesian (Native), English (B2 CEFR - Certified by DynEd)}
+        }}
+\end{itemize}
+\vspace{-16pt}
+
+\end{document}
